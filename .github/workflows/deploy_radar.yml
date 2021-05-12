@@ -32,8 +32,8 @@ jobs:
 
       - name: nuxt generate
         run: npm run generate
-        #env:
-        #  BASE_URL: ${{ secrets.BASE_URL }}
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
 
       - name: Upload build
         uses: actions/upload-artifact@v2

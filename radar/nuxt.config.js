@@ -20,6 +20,11 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
+  router: {
+    base:
+      process.env.NODE_ENV === "development" ? process.env.BASE_URL : "/radar/"
+  }, // where <subfolder> is the subfolder!
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
