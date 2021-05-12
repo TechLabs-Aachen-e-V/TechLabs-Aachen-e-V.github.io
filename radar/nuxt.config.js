@@ -35,7 +35,7 @@ export default {
   components: true,
 
   image: {
-    staticFilename: '/radar/nuxt/image/[hash][ext]',
+    staticFilename: 'nuxt/image/[hash][ext]',
     provider : 'static',
     static: {
       baseURL: '/radar/_ipx/',
