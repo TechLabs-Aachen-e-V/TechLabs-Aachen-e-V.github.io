@@ -22,7 +22,7 @@ export default {
 
   router: {
     base:
-      process.env.NODE_ENV === "development" ? process.env.BASE_URL : "/radar/"
+      process.env.NODE_ENV === "development" ? '/' : "/radar/"
   }, // where <subfolder> is the subfolder!
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,8 +35,13 @@ export default {
   components: true,
 
   image: {
-    staticFilename: '/router/nuxt/images/[name]-[hash][ext]',
+    staticFilename: '/radar/nuxt/image/[hash][ext]',
+    provider : 'static',
+    static: {
+      baseURL: '/radar/_ipx/',
+    }
   },
+  
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint

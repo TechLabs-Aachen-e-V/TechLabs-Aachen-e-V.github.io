@@ -1,9 +1,9 @@
 {
   "name": "radar",
-  "description": "The TechLabs Berlin semester radar shows all the important semester information at a glance",
-  "version": "2.2.0",
+  "description": "The TechLabs Aachen ((c) TL Berlin) semester radar shows all the important semester information at a glance",
+  "version": "2.3.0",
   "private": true,
-  "author": "Felix Seidel",
+  "author": "Felix Seidel (Rene Ahlsdorf for Aachen)",
   "contributors": [
     "Daniel da Rocha",
     "Maximilian Schall"
@@ -27,11 +27,12 @@
     "clsx": "^1.1.1",
     "core-js": "^3.8.3",
     "date-fns": "^2.19.0",
+    "express": "^4.17.1",
     "nuxt": "^2.14.12",
     "vue-tippy": "^4.8.0"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.4.1",
+    "@nuxt/image": "^0.4.8",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/google-fonts": "^1.3.0",
