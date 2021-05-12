@@ -65,7 +65,7 @@ jobs:
 
       - name: Commit deploy repo
         run: |
-          git add --all --force radar
+          git add --all --force .
           git commit -m "Add frontend build at $(date +%FT%T%Z)" --allow-empty
         working-directory: radar
 
