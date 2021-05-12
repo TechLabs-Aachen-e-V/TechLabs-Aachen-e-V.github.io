@@ -1,13 +1,13 @@
 ---
 socialLinks:
   - type: facebook
-    url: https://www.facebook.com/techlabsberlin
+    url: https://www.facebook.com/techlabsac
     is_public: true
   - type: instagram
-    url: https://www.instagram.com/techlabs.berlin/
+    url: https://www.instagram.com/techlabs.aachen/
     is_public: true
   - type: linkedin
-    url: https://www.linkedin.com/company/techlabs-berlin
+    url: https://www.linkedin.com/showcase/53139329
     is_public: true
   - type: slack
     url: https://techlabs-community.slack.com/
