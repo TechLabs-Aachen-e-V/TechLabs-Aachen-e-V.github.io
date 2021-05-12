@@ -51,17 +51,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: deploy
-          path: radar/deploy
 
       - name: Download build
         uses: actions/download-artifact@v2
         with:
           name: radar-build
-          path: radar/build
-
-      - name: Copy frontend build to deploy repo
-        run: |
-          cp -r deploy/.git deploy/CNAME deploy/README.md build/
+          path: radar
 
       - name: Configure git
         run: |
@@ -70,10 +65,10 @@ jobs:
 
       - name: Commit deploy repo
         run: |
-          git add --all --force .
+          git add --all --force radar
           git commit -m "Add frontend build at $(date +%FT%T%Z)" --allow-empty
-        working-directory: radar/build
+        working-directory: radar
 
       - name: Push deploy repo
         run: git push
-        working-directory: radar/build
+        working-directory: radar
