@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: TechLabs-Berlin/radar
-  branch: modernize
+  repo: TechLabs-Aachen-e-V/TechLabs-Aachen-e-V.github.io
+  branch: deploy
 
-site_url: https://bln.techlabs.org
+site_url: https://techlabs-aachen-e-v.github.io/radar
 
-media_folder: 'static/images/uploads'
+media_folder: 'radar/static/image/upl_images'
 
 slug:
   encoding: 'ascii'
@@ -16,7 +16,7 @@ collections:
   - name: events
     label: 'Events'
     label_singular: 'Event'
-    folder: 'content/events'
+    folder: 'radar/content/events'
     create: true
     # slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
