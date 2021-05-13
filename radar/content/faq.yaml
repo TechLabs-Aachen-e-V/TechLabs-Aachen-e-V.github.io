@@ -1,0 +1,5 @@
+sections:
+  - title: Admin
+    questions:
+      - title: Ist Bla = Bla?
+        content: Ja!
